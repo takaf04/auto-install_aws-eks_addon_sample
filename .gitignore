@@ -1,0 +1,12 @@
+.terraform/
+terraform.tfstate.d/
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+
+variables.auto.tfvars
+kubeconfig_*
+
+.DS_Store
+temp/
+*.log
