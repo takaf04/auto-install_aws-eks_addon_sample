@@ -37,10 +37,6 @@ module "eks" {
       ]
     }
   ]
-  workers_additional_policies = [
-    # CloudWatch Container Insights
-    "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
-  ]
   map_accounts = var.param.eks.map_accounts
   map_roles    = var.param.eks.auth.map_roles
   map_users    = var.param.eks.auth.map_users
